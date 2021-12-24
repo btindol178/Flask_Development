@@ -1,0 +1,11 @@
+<html>
+<head>
+<title>Download</title>
+</head>
+<body>
+        {{ form.hidden_tag() }}
+    <form class="d-inline-block ml-5" action="{{ url_for('redownloaded_file', path=url) }}">
+         <input type="submit" value="Download File">
+    </form>
+</body>
+</html>
